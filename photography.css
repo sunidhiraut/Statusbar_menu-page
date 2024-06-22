@@ -1,0 +1,120 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.main-box{
+    width: 100%;
+    height: 100vh;
+    background: url("cam.jpg");
+    background-size: 100% 100%;
+
+}
+.btn-one span{
+    /* color: white; */
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 12px;
+    line-height: 90px; 
+    transition: all 0.2s linear;
+}
+.sidebar-menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.4s linear;
+}
+.sidebar-menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+    
+}
+.sidebar-menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+}
+.sidebar-menu .btn-two span{
+ color: grey;
+ font-size: 20px;
+ line-height: 30px;
+ position: absolute;
+ right: 10px;
+ top: 10px;
+ opacity: 0;
+ cursor: pointer;
+}
+.sidebar-menu .menu{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+.sidebar-menu .menu li{
+    margin-top: 6px;
+    padding: 10px 20px ;
+}
+.sidebar-menu .menu span,a{
+    text-decoration: none;
+      color: white;
+      font-size: 20px;
+}
+.sidebar-menu .menu span {
+    padding-right: 10px;
+}
+.sidebar-menu .social-media{
+    position: absolute;
+  bottom: 20px;
+  left: 20%;
+  
+}
+.sidebar-menu .social-media {
+    opacity: 0.2;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+}
+#check{
+    display: none;
+}
+.sidebar-menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn-one span:hover{
+    font-size: 50px;
+}
+
+ .btn-two span:hover{
+    font-size: 30px;
+}
+.sidebar-menu .social-media i:hover{
+    opacity: 1;
+    transform: scale(2);
+    
+}
+#check:checked ~ .sidebar-menu{
+    left: 0;
+}
+#check:checked ~ .btn-one span{
+    opacity: 0;
+}
+#check:checked ~ .sidebar-menu .btn-two span
+{
+    opacity: 1;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: serif;
+}
